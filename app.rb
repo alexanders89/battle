@@ -4,9 +4,9 @@ class Battle < Sinatra::Base
 
   enable :sessions
 
-  # get '/' do
-  #   "Testing infrastructure working!"
-  # end
+  get '/test' do
+    "Testing infrastructure working!"
+  end
 
   get '/' do
     erb(:index)
@@ -26,8 +26,10 @@ class Battle < Sinatra::Base
     erb(:play)
   end
 
-  post '/attack' do
-    "Orange has attacked Celery"
+  get '/attack' do
+    @player_1_name = session[:player_1_name]
+    @player_2_name = session[:player_2_name]
+    erb(:attack)
   end
 
 
