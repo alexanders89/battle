@@ -1,3 +1,9 @@
+require 'features/web_helpers'
+
+require 'simplecov'
+SimpleCov.start
+
+
 RSpec.configure do |config|
 
   ENV['RACK_ENV'] = 'test'
