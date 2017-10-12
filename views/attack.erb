@@ -1,2 +1,6 @@
-<h1> <%= "#{@player_1_name} has attacked #{@player_2_name}!"%></h1>
-<h1> <%= "#{@player_2_name} has 90 butter points"%></h1>
+<h1> <%= "#{$player_1.name} has attacked #{$player_2.name}!"%></h1>
+<h1> <%= "#{$player_2.name} has #{$player_2.hit_points} butter points"%></h1>
+
+<form action="/play">
+  <input type="submit" value="Home">
+</form>
