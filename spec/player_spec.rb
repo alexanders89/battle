@@ -16,13 +16,6 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'one player can attack another' do
-      owliver.attack(barry)
-      expect(barry.hit_points).to eq 90
-    end
-  end
-
   describe '#receive_damage' do
     it 'reduces the player hit points' do
       expect { owliver.reduce_hit_points }.to change { owliver.hit_points }.by(-10)
