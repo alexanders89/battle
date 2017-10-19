@@ -1,5 +1,5 @@
-<h1> <%= "#{@game.player_1.name} has attacked #{@game.player_2.name}!"%></h1>
-<h1> <%= "#{@game.player_2.name} has #{@game.player_2.hit_points} butter points"%></h1>
+<h1> <%= "#{@game.on_turn.name} has attacked #{@game.not_on_turn.name}!"%></h1>
+<h1> <%= "#{@game.not_on_turn.name} has #{@game.not_on_turn.hit_points} butter points"%></h1>
 
 <form action="/play">
   <input type="submit" value="Home">

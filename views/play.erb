@@ -3,6 +3,9 @@
 <h1> <%= "#{@game.player_1.name} has #{@game.player_1.hit_points} butter points"%></h1>
 <h1> <%= "#{@game.player_2.name} has #{@game.player_2.hit_points} butter points"%></h1>
 
+<h1> <%= "#{@game.on_turn.name}'s move!"%></h1>
+
+
 <form action="/attack">
   <input type="submit" value="Attack">
 </form>
